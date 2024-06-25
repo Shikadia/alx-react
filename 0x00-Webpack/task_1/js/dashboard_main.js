@@ -1,5 +1,5 @@
 const $ = require('jquery');
-const lod = require('lodash');
+const _ = require('lodash');
 
 $('body').append('<p>Holberton Dashboard</p>');
 $('body').append('<p>Dashboard data for the students</p>');
@@ -14,4 +14,4 @@ function updateCounter() {
   $('#count').text(`${count} clicks on the button`);
 }
 
-$('button').on('click', lod.debounce(updateCounter, 500));
+$('button').on('click', _.debounce(updateCounter, 500));
