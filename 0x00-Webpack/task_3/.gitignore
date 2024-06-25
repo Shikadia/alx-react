@@ -1,0 +1,4 @@
+public/
+
+# Node.js specific
+node_modules/
