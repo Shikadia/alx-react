@@ -15,19 +15,14 @@ module.exports = {
     hints: false,
     maxEntrypointSize: 1000000,
   },
-  plugins: [
-    new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin(),
-  ],
+  plugins: [ new CleanWebpackPlugin(), new HtmlWebpackPlugin() ],
   optimization: {
     splitChunks: {
       chunks: 'all',
     },
   },
   devServer: {
-    static: {
-      directory: path.join(__dirname, 'public'),
-    },
+    contentBase: path.join(__dirname, './public'),
     compress: true,
     port: 8564,
   },
@@ -48,8 +43,8 @@ module.exports = {
           {
             loader: "image-webpack-loader",
             options: {
-              bypassOnDebug: true,
-              disable: true,
+              bypassOnDebug: true, // webpack@1.x
+              disable: true, // webpack@2.x and newer
             },
           },
         ],
