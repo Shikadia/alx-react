@@ -1,14 +1,15 @@
   .Notifications {
-    padding: 50px;
+    padding: 1em;
     border: 2px dashed red;
+    position: absolute;
+    top: 10px;
+    width: 95vw;
  }
 
- .Notl1 {
-  color: rebeccapurple;
+ li[data="default"] {
+  color: blue;
 }
-.Notl2 {
- color: red;
-}
-.Notl3 {
+
+li[data="urgent"] {
   color: red;
 }
