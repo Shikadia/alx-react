@@ -2,7 +2,7 @@
   padding: 1em;
   border: 2px dashed red;
   position: absolute;
-  top: 2.5em;
+  top: 1.8em;
   right: 0;
 }
 
@@ -22,16 +22,4 @@
 [data-urgent],
 [data-notification-type="urgent"] {
   color: red;
-}
-
-button{
-  color: "#3a3a3a"; 
-  font-Weight: "bold";
-  background: "none";
-  border: "none";
-  font-size: "15px";
-  position: "absolute";
-  right: "2px";
-  top: "2px";
-  cursor: "pointer"
 }

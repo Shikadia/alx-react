@@ -1,2 +1,1 @@
-## React commponet
-# 0x003-React_components
+## 0x03. React Component
